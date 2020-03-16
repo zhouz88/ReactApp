@@ -1,5 +1,16 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import App from './app'
+import { BrowserRouter as Router } from 'react-router-dom'
 
-ReactDOM.render(<App />, document.getElementById('root'))
+import { NavBar } from '../components'
+
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+function App() {
+    return (
+        <Router>
+            <NavBar />
+        </Router>
+    )
+}
+
+export default App
